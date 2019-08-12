@@ -1,0 +1,39 @@
+{
+	"search-data": [
+		{
+
+	        "movieId": "1",
+			"movieName" :"Titanic",
+			"description": "This is a very good movie"
+				
+	    },
+		{
+
+	        "movieId": "2",
+			"movieName" :"DDLJ",
+			"description": "awesome movie in bollywood"
+				
+	    },
+	    {
+
+	        "movieId": "3",
+			"movieName" :"TomAndJerry",
+			"description": "loved this cartoon series"
+				
+	    },
+	    {
+
+	        "movieId": "4",
+			"movieName" :"FastAndFurious",
+			"description": "It was quite hilarious and A true comedy"
+				
+	    },
+	    {
+
+	        "movieId": "5",
+			"movieName" :"Lion King",
+			"description": "a big fan of this film since childhood"
+				
+	    }
+	]
+}
