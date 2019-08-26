@@ -7,42 +7,24 @@
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 			<body>
-			<h1>Keyword Search Algorithm</h1>
+				<h1>Upload File:</h1>
+		 
+				<div>
+		            <h3> Choose File to Upload in Server </h3>
+		            <form action="/keywordSearchAlgorithm/" method="post" enctype="multipart/form-data">
+		                <input type="file" name="file" />
+		                <input type="submit" value="upload" />
+		            </form>          
+        		</div>
+				
+			
+			<h2>Keyword Search Algorithm</h2>
 			<br></br> <br></br>
-				<h3>Case Insensitive Search Algorithm</h1>
+				<h3>Case Insensitive Search Algorithm</h3>
 				<form action="/keywordSearchAlgorithm/" method="get">
 					<input type="text" name="inputString" /> 
 					<input type="submit" value="search" />
 				</form>
 			</body>
-			
-			<br></br> <br></br>
-			<table border="1" cellpadding="5">
-            <tr>
-                <th>MovieID</th>
-                <th>Movie Name</th>
-                <th>Comment</th>
-            </TR>
-            <% 
-            List result= (List) request.getAttribute("searchResults");
-			Iterator it = result.iterator();
-			while(it.hasNext()){
-			    RecordObject obj= (RecordObject) it.next();
-	   		%>
-	            <Tr>
-	                <td> <%= obj.getMovieId() %></td> 
-	                <td> <%= obj.getMovieName() %></td>
-	                <td> <%= obj.getComment() %></td>
-	               	<td>
-		              <form action="/keywordSearchAlgorithm/" method="post">
-		                <input type="hidden" name="recordId" value="<%= obj.getMovieId() %>">
-						<input type="submit" value="delete" />
-					 </form>
-				 </td>
-	             
-	            </Tr>
-	            <% } %>
-			
-        </table>
 	</head>
 </html>
